@@ -1,6 +1,6 @@
 Name:		qrencode
 Version:	4.1.1
-Release:	1
+Release:	2
 Summary:	Compact library for encoding data in a QR Code symbol
 License:	LGPLv2+
 URL:		https://fukuchi.org/works/qrencode/
@@ -75,6 +75,9 @@ popd
 %{_mandir}/man1/qrencode.1*
 
 %changelog
+* Thu Aug 12 2021 lishiyang <lishiyangasdf1113@163.com> - 4.1.1-2
+- Path modification error
+
 * Thu Jan 28 2021 jinzhimin <jinzhimin2@huawei.com> - 4.1.1-1
 - Upgrade to 4.1.1
 
