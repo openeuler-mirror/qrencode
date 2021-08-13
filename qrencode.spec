@@ -48,8 +48,10 @@ autoconf
 
 chrpath --delete %{buildroot}%{_bindir}/qrencode
 
+%ifnarch riscv64
 #Include previous ABI version for temporary binary compatibility
-cp -a %{_libdir}/libqrencode.so.* %{buildroot}%{_libdir}
+cp -a %{_libdir}/libqrencode.so.3* %{buildroot}%{_libdir}
+%endif
 
 %check
 pushd ./tests
